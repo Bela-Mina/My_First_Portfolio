@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    
+}
+
+/*nav bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #f5f5f5; 
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+nav img {
+    margin-top: 20px;
+}
+.all :first-child{
+    clear: both;
+    /*padding-top: 50px;*/
+    text-align: center;
+}
+.all h1 {
+    font-size: 120px;
+    font-family: ;
+    padding-top: 50px;
+}
+span {
+    font-size: 16px;
+    padding: 30px;
+}
+.all button {
+    display: flex;
+    margin: 41px auto;
+    flex-direction: row;
+}
+button {
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #ff6565;
+    color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    font-weight: 600px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(0,0, 0, 0.2);
+    opacity: 0.3s;
+}
+
+/* Section one*/
+.all {
+}
+.text-item h2 {
+    text-align: center;
+    clear: both;
+}
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+image {
+width: 150PX;
+}
+.image img {
+    border-radius: 600px;
+    width: 150px;
+    height: 150px;
+}
+.image h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+image p {
+    width: 150px;
+    font-size: 14px;
+}
+/*quote-container*/
+.quote .conatiner {
+    display: flex;
+    
+}
+.quote h3 {
+    margin-left: 50px;
+    
+}
+.quote blockquote {
+    font-size: 22px;
+    font-style: italic;
+    
+}
+
+.quote p {
+    margin-left: 50px;
+    font-style: italic;
+    
+}
+.quote {
+    background-color: #e94296;
+    
+}.tutorials {
+    padding: 50px 0;
+    text-align: center;
+}
+.tutorials h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #000;
+}
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.video-card {
+    width: calc(25% - 15px);
+    text-align: left;
+    min-width: 200px;
+    flex-grow: 1;
+}
+.membership {
+    background-color: #282828;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.membership h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.membership-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto 50px;
+}
+.membership-card {
+    width: calc(25% - 15px);
+    min-width: 150px;
+    flex-grow: 1;
+}
+.membership-card img {
+    height: 30px;
+    width: 30px;
+}
+.membership-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+.membership-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+.membership button {
+    background-color: #ff6565;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*FAQ*/
+
+.faq {
+    padding: 50px 0;
+    text-align: center;
+}
+.faq h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.faq-item {
+    text-align: left;
+}
+.faq-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.faq-item p {
+    font-size: 14px;
+    color: #888;
+}
+
+/*footer*/
+footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding-bottom: 10px;
+}
+.footer-content > div:first-child {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.footer-content i {
+    font-size: 24px;
+    color: white;
+}
+footer p {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    order: 3;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 930px) {
+    .video-card {
+        width: calc(50% - 10px);
+    }
+    .membership-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .pros-grid, .faq-grid {
+        display: block;
+    }
+    .pro-card {
+        margin: 20px auto;
+    }
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    .quote .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    .membership-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+}
+
+
